@@ -1,0 +1,30 @@
+<html>
+<head>  
+<title>Assignment 3</title> 
+  
+</head>
+<body> 
+<h2>HTML Table</h2>
+<table id="myTable" border="1"> 
+</table>
+<input type="button" onclick="createTable()" value="Create the table"> 
+
+<script>
+function createTable()
+{
+rn = window.prompt("Enter number of rows","");
+cn = window.prompt("Enter number of columns","");
+  
+ for(var r=0;r<rn;r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<cn;c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Row-"+r+" Column-"+c; 
+    }
+   }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Enter 3 inputs</h2>
+
+<button onclick="myFunction()">Click</button>
+
+<p>Input: <span id="demo"></span></p>
+
+<script>
+        function myFunction(){
+        var i;
+        var j;
+        for(i=0 ; i<3 ; i++)
+         {
+            var x = prompt("Enter the number");
+            document.write("input: " + Number(x));
+            for (j = 0; j < Number(x); j++) {
+                document.write( " *");
+            }
+            document.write("<br>");
+            
+        }
+    }
+    </script>
+
+</body>
+</html>
